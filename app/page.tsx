@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import StarryBackground from "@/components/StarryBackground";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -12,9 +13,11 @@ export default function Home() {
         <p className="text-muted-foreground text-center max-w-md px-4">
           Aplicação para confirmação de chá de bebê de Iandê e Niara
         </p>
-        <Button variant="default" size="lg" className="mt-2 shadow-lg">
-          CONFIRME SUA PRESENÇA
-        </Button>
+        <Link href="/confirmation">
+          <Button variant="default" size="lg" className="mt-2 shadow-lg">
+            CONFIRME SUA PRESENÇA
+          </Button>
+        </Link>
       </div>
     </main>
   );

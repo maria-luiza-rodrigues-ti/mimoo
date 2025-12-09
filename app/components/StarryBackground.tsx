@@ -8,7 +8,6 @@ export default function StarryBackground() {
       <div className="stars-layer-2"></div>
       <div className="stars-layer-3"></div>
       <div className="stars-layer-4"></div>
-      <div className="stars-layer-5"></div>
 
       {/* Nebulosa sutil */}
       <div className="nebula"></div>
@@ -18,7 +17,6 @@ export default function StarryBackground() {
         .stars-layer-2,
         .stars-layer-3,
         .stars-layer-4,
-        .stars-layer-5,
         .nebula {
           position: absolute;
           top: 0;
@@ -146,36 +144,6 @@ export default function StarryBackground() {
             float-random-4 60s ease-in-out infinite,
             twinkle-random-4 3.1s ease-in-out infinite;
           filter: blur(0.5px);
-        }
-
-        /* Camada 5 - estrelas gigantes pulsantes */
-        .stars-layer-5 {
-          background-image:
-            radial-gradient(
-              circle 6px at 18% 25%,
-              rgba(255, 255, 255, 0.95),
-              transparent
-            ),
-            radial-gradient(
-              circle 7px at 65% 40%,
-              rgba(255, 255, 255, 0.92),
-              transparent
-            ),
-            radial-gradient(
-              circle 6px at 38% 75%,
-              rgba(255, 255, 255, 0.9),
-              transparent
-            ),
-            radial-gradient(
-              circle 7px at 82% 68%,
-              rgba(255, 255, 255, 0.93),
-              transparent
-            );
-          background-size: 700px 700px;
-          animation:
-            float-random-5 90s ease-in-out infinite,
-            pulse-random 12s ease-in-out infinite;
-          filter: blur(0.8px);
         }
 
         /* Nebulosa sutil */
@@ -348,30 +316,6 @@ export default function StarryBackground() {
           }
           67% {
             opacity: 0.75;
-          }
-        }
-
-        @keyframes pulse-random {
-          0%,
-          100% {
-            opacity: 0.95;
-            transform: scale(1);
-          }
-          13% {
-            opacity: 0.7;
-            transform: scale(1.08);
-          }
-          29% {
-            opacity: 0.85;
-            transform: scale(0.98);
-          }
-          47% {
-            opacity: 0.6;
-            transform: scale(1.12);
-          }
-          71% {
-            opacity: 0.8;
-            transform: scale(1.03);
           }
         }
 
